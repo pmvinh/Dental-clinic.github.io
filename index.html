@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>Главная</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header th:insert="blocks/header :: header"></header>
+    <div class="content m-5">
+        <p style="text-align: center"> <b>О стоматологической клинике "PMVINH"</b></p>
+        <p>В наших отделениях можно получить консультацию специалистов как самых востребованных, так и достаточно редких стоматологических направлений, что позволяет решить большинство стоматологических вопросов за одно посещение.
+            Кроме того, мы заботимся о квалификации врачей «PMVINH» – предоставляем возможность перенимать опыт у ведущих экспертов в своей области, осваивать передовые методы и технологии, проходить стажировки и обучение за рубежом.
+        </p>
+        <p>Мы открыты с понедельник по субботу с 8:00 до 21:00</p>
+    </div>
+    <div class="content padding-site m-3">
+        <p class="invisible"> temp</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-center">
+                    <img class="main_pict" src="/static/img/main.jpg" width="360" height="240" alt="Стоматология"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div th:insert="blocks/footer :: footer"></div>
+</body>
+</html>
